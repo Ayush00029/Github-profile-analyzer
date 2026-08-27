@@ -1,0 +1,49 @@
+@import "tailwindcss";
+
+@layer base {
+  body {
+    @apply bg-slate-950 text-slate-100 font-sans antialiased min-h-screen selection:bg-blue-500 selection:text-white;
+  }
+}
+
+/* Custom styles for react-calendar-heatmap SVG elements */
+.react-calendar-heatmap {
+  @apply text-xs select-none w-full;
+}
+
+.react-calendar-heatmap text {
+  fill: #94a3b8;
+  font-size: 9px;
+}
+
+.react-calendar-heatmap rect {
+  rx: 2px;
+  ry: 2px;
+  transition: opacity 0.2s ease;
+}
+
+.react-calendar-heatmap rect:hover {
+  stroke: #e2e8f0;
+  stroke-width: 1px;
+  opacity: 0.9;
+}
+
+.color-empty {
+  fill: #1e293b;
+}
+
+.color-scale-1 {
+  fill: #0e4429;
+}
+
+.color-scale-2 {
+  fill: #006d32;
+}
+
+.color-scale-3 {
+  fill: #26a641;
+}
+
+.color-scale-4 {
+  fill: #39d353;
+}
